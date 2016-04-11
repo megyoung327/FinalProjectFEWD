@@ -1,0 +1,277 @@
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,400italic,600,600italic,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,400italic,500,600,700);
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+#container {
+  width: 1000px;
+  margin: auto;
+}
+
+body {
+	font-family: "Raleway", helvetica; 
+	color: #00000;
+}
+
+.resources {
+  background-color: #c9d5fc; 
+}
+
+header {
+  min-height: 100px;
+  text-align: center;
+  background-color: #fcf0c9;
+  margin: auto;
+  border-style: double;
+  border-width: 5px;
+  padding: 10px;
+}
+
+.feature-photo {
+  background-image: url("../images/healthy-skin-foods.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 10% 10%; 
+  min-height: 450px;
+}
+
+nav li {
+  float: right;
+}
+
+h1 {
+	font-size: 60px;
+  font-family: "Josefin Sans", sans-serif;
+  font-style: 600;
+  padding: 15px;
+}
+
+/*Added to get rid of the default blue color and underline style.*/
+
+a {
+    text-decoration: none !important;
+}
+
+li {
+  padding: 25px;
+  font-size: 24px;
+}
+
+main {
+ 	background-color: #fcf0c9;
+ 	width:100%;
+ 	min-height: 600px;
+}
+
+section {
+  min-height: 750px;
+}
+
+footer {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 25px;
+	background-color: #fcc9d5;
+	width: 100%;
+	min-height: 75px;
+  overflow: auto;
+}
+
+footer h2 {
+  padding: 10px;
+	text-align: center;
+ }
+
+ .social_icon {
+  float:left;
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+ }
+
+.question {
+  float: left;
+  font-size: 35px;
+  padding: 20px;
+}
+
+li {
+  font-size: 30px;
+  font-style: 500;
+  padding: 15px;
+  float: left;
+}
+
+.categories {
+  float: left;
+  padding: 10px;
+  width: 100%;
+  overflow: auto;
+}
+
+/*Superfood pictures that will populate when category word is hovered.*/
+/*first set of images*/
+.demo.hydrate  {
+  background-image: url("../images/cucumber.jpg");
+  background-size: cover;
+}
+.demo.bright {
+  background-image: url("../images/spirulina.jpg");
+  background-size: cover;
+
+}
+.demo.mood {
+  background-image: url("../images/kale.jpg");
+  background-size: cover;
+
+}
+.demo.detox {
+  background-image: url("../images/fennel.jpg");
+  background-size: cover;
+}
+.demo.age {
+  background-image: url("../images/grapefruit.jpg");
+  background-size: cover;
+}
+.demo.soft {
+  background-image: url("../images/avocado.jpg");
+  background-size: cover;
+}
+
+/*Second Set of images*/
+.demo_second.hydrate {
+  background-image: url("../images/beets.jpg");
+  background-size: cover;
+}
+
+.demo_second.bright {
+  background-image: url("../images/figs.jpg");
+  background-size: cover;
+}
+
+.demo_second.mood {
+  background-image: url("../images/beets.jpg");
+  background-size: cover;
+}
+
+.demo_second.detox {
+  background-image: url("../images/kiwi.jpg");
+  background-size: cover;
+}
+
+.demo_second.soft {
+  background-image: url("../images/Brazil-Nuts.jpg");
+  background-size: cover;
+}
+
+.demo_second.age {
+  background-image: url("../images/raspberry.jpg");
+  background-size: cover;
+}
+
+/*Third set of images*/
+.demo_third.hydrate {
+  background-image: url("../images/radishes.jpg");
+  background-size: cover;
+}
+.demo_third.bright {
+  background-image: url("../images/carrots.jpg");
+  background-size: cover;
+}
+.demo_third.mood {
+  background-image: url("../images/pumpkin-seeds.jpg");
+  background-size: cover;
+}
+.demo_third.detox {
+  background-image: url("../images/cucumber.jpg");
+  background-size: cover;
+}
+.demo_third.soft {
+  background-image: url("../images/almonds.jpg");
+  background-size: cover;
+}
+
+.demo_third.age {
+   background-image: url("../images/chard.jpg");
+   background-size: cover;
+}
+
+img {
+  width: 100%;
+}
+
+.demo,
+.demo_second,
+.demo_third {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  padding: 50px;
+  background-size: cover;
+  float: left;
+  border-style: solid;
+  border-color: white;
+  border-width: 7px;
+}
+
+#content,
+#content_second,
+#content_third {
+  display: none;
+  position: absolute;
+  padding: 20px;
+  width: 400px;
+  height: 400px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,.5);
+  color: #fff;
+ }
+
+/*Hover effects*/
+
+.social_icon:hover {
+  color: #c9d5fc;
+  cursor: pointer;
+}
+
+.demo:hover #content,
+.demo_second:hover #content_second,
+.demo_third:hover #content_third {
+  display: block;
+}
+
+h1:hover {
+  color: #c9d5fc;
+  cursor: pointer;
+}
+
+/*Special formatting for Resources Page*/
+
+li:hover #resources-list {
+  color: white;
+  cursor: pointer;
+}
+
+h3 {
+  font-size: 50px;
+  font-family: "Josefin Sans", sans-serif;
+  font-style: 600;
+  padding: 15px;
+}
+
+#resources-list li {
+  float: none;
+}
