@@ -63,11 +63,6 @@ a {
     text-decoration: none !important;
 }
 
-li {
-  padding: 25px;
-  font-size: 24px;
-}
-
 main {
  	background-color: #fcf0c9;
  	width:100%;
@@ -106,7 +101,7 @@ footer h2 {
 }
 
 li {
-  font-size: 30px;
+  font-size: 25px;
   font-style: 500;
   padding: 15px;
   float: left;
