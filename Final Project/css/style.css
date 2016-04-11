@@ -1,0 +1,186 @@
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,400italic,600,600italic,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,400italic,500,600,700);
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+#container {
+  width: 1000px;
+  margin: auto;
+}
+
+body {
+	font-family: "Raleway", helvetica; 
+	color: #00000;
+}
+
+header {
+  min-height: 100px;
+  text-align: center;
+  background-color: #fcf0c9;
+  margin: auto;
+  border-style: double;
+  border-width: 5px;
+  padding: 10px;
+}
+
+.feature-photo {
+  background-image: url("../images/healthy-skin-foods.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 450px;
+}
+
+nav li {
+  float: right;
+}
+
+h1 {
+	font-size: 60px;
+  font-family: "Josefin Sans", sans-serif;
+  font-style: 600;
+  padding: 15px;
+  
+}
+
+li {
+  float: right;
+  padding: 25px;
+  font-size: 24px;
+}
+
+main {
+ 	background-color: #fcf0c9;
+ 	width:100%;
+ 	min-height: 600px;
+}
+
+section {
+  min-height: 750px;
+}
+
+footer {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 25px;
+	background-color: #fcc9d5;
+	width: 100%;
+	min-height: 75px;
+  overflow: auto;
+}
+
+footer h2 {
+  padding: 10px;
+	text-align: center;
+ }
+
+ .social_icon {
+  float:left;
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+ }
+
+.question {
+  float: left;
+  font-size: 35px;
+  padding: 20px;
+}
+
+li {
+  font-size: 30px;
+  font-style: 500;
+  padding: 15px;
+  float: left;
+}
+
+li:hover {
+  color: #c9d5fc;
+  cursor: pointer
+}
+
+.social_icon:hover {
+  color: #c9d5fc;
+  cursor: pointer
+}
+
+.categories {
+  float: left;
+  padding: 10px;
+  width: 100%;
+  overflow: auto;
+}
+
+/*Superfood pictures that will populate when category word is hovered.*/
+.demo.hydrate  {
+  background-image: url("../images/cucumber.jpg");
+  background-size: contain;
+}
+.demo.bright {
+  background-image: url("../images/spirulina.jpg");
+  background-size: contain;
+
+}
+.demo.mood {
+  background-image: url("../images/spinach.jpg");
+  background-size: contain;
+
+}
+.demo.detox {
+  background-image: url("../images/fennel.jpg");
+  background-size: contain;
+}
+.demo.soft {
+  background-image: url("../images/grapefruit.jpg");
+  background-size: contain;
+}
+.demo.age {
+  background-image: url("../images/avocado.jpg");
+  background-size: contain;
+}
+
+.demo {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  padding: 50px;
+  background-size: cover;
+  float: left;
+  border-style: solid;
+  border-color: white;
+  border-width: 10px;
+}
+
+.demo:hover #content{
+  display: block;
+}
+
+img {
+  max-width: 100%;
+}
+
+#content {
+  display: none;
+  position: absolute;
+  padding: 20px;
+  width: 400px;
+  height: 400px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,.5);
+  color: #fff;
+ }
+
+
+
