@@ -36,6 +36,7 @@ header {
   border-style: double;
   border-width: 5px;
   padding: 10px;
+  color: inherit;
 }
 
 .feature-photo {
@@ -46,15 +47,19 @@ header {
   min-height: 450px;
 }
 
-nav li {
+nav ul {
   float: right;
+}
+
+nav li {
+  float: left;
 }
 
 h1 {
 	font-size: 60px;
   font-family: "Josefin Sans", sans-serif;
-  font-style: 600;
   padding: 15px;
+  color: inherit;
 }
 
 /*Added to get rid of the default blue color and underline style.*/
@@ -67,6 +72,8 @@ main {
  	background-color: #fcf0c9;
  	width:100%;
  	min-height: 600px;
+  text-align: center;
+  color: inherit;
 }
 
 section {
@@ -86,6 +93,13 @@ footer h2 {
   padding: 10px;
 	text-align: center;
  }
+
+ h3 {
+  font-size: 50px;
+  font-family: "Josefin Sans", sans-serif;
+  font-style: 600;
+  padding: 15px;
+}
 
  .social_icon {
   float:left;
@@ -238,7 +252,6 @@ img {
 /*Hover effects*/
 
 .social_icon:hover {
-  color: #c9d5fc;
   cursor: pointer;
 }
 
@@ -255,16 +268,9 @@ h1:hover {
 
 /*Special formatting for Resources Page*/
 
-li:hover #resources-list {
+#resources-list li:hover a  {
   color: white;
   cursor: pointer;
-}
-
-h3 {
-  font-size: 50px;
-  font-family: "Josefin Sans", sans-serif;
-  font-style: 600;
-  padding: 15px;
 }
 
 #resources-list li {

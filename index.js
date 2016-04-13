@@ -5,8 +5,8 @@ function changeBackgroundImage() {
 
     var attr = $(this).attr('class'); //attr === 'hydrate'
     var text = $(this).attr('data-text');
-    var text2 = $(this).attr('data-text-2');
-    var text3 = $(this).attr('data-text-3');
+    var text2 = $(this).attr('data-text-two');
+    var text3 = $(this).attr('data-text-three');
 
 
     //$('.demo').attr('categoryItem');
