@@ -1,12 +1,15 @@
-function changeBackgroundImage() {
+function changeBackgroundImage(event) {
+
     
+
+    $('.demo, .demo_second, .demo_third').removeClass('hidden');
     //this
     //$(this)
 
-    var attr = $(this).attr('class'); //attr === 'hydrate'
-    var text = $(this).attr('data-text');
-    var text2 = $(this).attr('data-text-two');
-    var text3 = $(this).attr('data-text-three');
+    var attr = $('.benefits option:selected').attr('class'); //attr === 'hydrate'
+    var text = $('.benefits option:selected').attr('data-text');
+    var text2 = $('.benefits option:selected').attr('data-text-two');
+    var text3 = $('.benefits option:selected').attr('data-text-three');
 
 
     //$('.demo').attr('categoryItem');
@@ -19,26 +22,13 @@ function changeBackgroundImage() {
     $('#content_second').html('<p>' + text2 + '</p>');
     $('#content_third').html('<p>' + text3 + '</p>');
 
-}
 
+}
 
 $(document).ready(function() {
 
-    $('li').hover(changeBackgroundImage);
+    $('.benefits').change(changeBackgroundImage);
 
-        // if (categoryItem = '.hydrate') {
-        //     $(.demo).attr('.cucumber') 
-        //  } else if (categoryItem = '.bright') {
-        //     $('.demo').attr('.bright')
-        //  } else if (categoryItem = '.mood') {
-        //     $('.demo').attr('.spinach')
-        //  } else if (categoryItem = '.detox') {
-        //     $('.demo').attr('.fennel')
-        //  } else if (categoryItem = '.soft') {
-        //     $('.demo').attr('.avocado')
-        //  } else if (categoryItem = '.age') {
-        //     $('.demo').attr('.grapefruit')
-        //  }
 
 });
 

@@ -29,7 +29,7 @@ body {
 }
 
 header {
-  min-height: 100px;
+  min-height: 75px;
   text-align: center;
   background-color: #fcf0c9;
   margin: auto;
@@ -76,6 +76,17 @@ main {
   color: inherit;
 }
 
+select {
+   padding: 10px 8px;
+   margin-top: 10px;
+   border: solid;
+   border-width: .3px;
+   border-radius: 6px;
+   background-color: #f1f1f1;
+   font-family: "Josefin Sans", sans-serif;
+   font-size: 25px;
+}
+
 section {
   min-height: 750px;
 }
@@ -109,9 +120,8 @@ footer h2 {
  }
 
 .question {
-  float: left;
   font-size: 35px;
-  padding: 20px;
+  padding: 75px;
 }
 
 li {
@@ -121,12 +131,12 @@ li {
   float: left;
 }
 
-.categories {
+/*.categories {
   float: left;
   padding: 10px;
   width: 100%;
   overflow: auto;
-}
+}*/
 
 /*Superfood pictures that will populate when category word is hovered.*/
 /*first set of images*/
@@ -215,6 +225,10 @@ li {
    background-size: cover;
 }
 
+.feature-images {
+  display: inline-block;
+}
+
 img {
   width: 100%;
 }
@@ -226,11 +240,16 @@ img {
   height: 400px;
   position: relative;
   padding: 50px;
+  margin-right: 10px;
   background-size: cover;
-  float: left;
   border-style: solid;
   border-color: white;
   border-width: 7px;
+  float: left;
+}
+
+.hidden {
+  display: none;
 }
 
 #content,
@@ -266,6 +285,14 @@ h1:hover {
   cursor: pointer;
 }
 
+a:visited {
+  color: black;
+}
+
+select:hover {
+  cursor: pointer;
+}
+
 /*Special formatting for Resources Page*/
 
 #resources-list li:hover a  {
@@ -276,3 +303,5 @@ h1:hover {
 #resources-list li {
   float: none;
 }
+
+
