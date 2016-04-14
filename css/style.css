@@ -281,13 +281,13 @@ img {
   display: block;
 }
 
-h1:hover {
-  color: #c9d5fc;
-  cursor: pointer;
-}
-
 a:visited {
   color: black;
+}
+
+a:hover {
+  color: #c9d5fc;
+  cursor: pointer;
 }
 
 select:hover {
