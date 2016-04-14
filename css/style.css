@@ -28,24 +28,21 @@ body {
   background-color: #c9d5fc; 
 }
 
-header {
-  min-height: 75px;
-  text-align: center;
-  background-color: #fcf0c9;
-  margin: auto;
-  border-style: double;
-  border-width: 5px;
-  padding: 10px;
-  color: inherit;
-}
-
 .feature-photo {
   background-image: url("../images/healthy-skin-foods.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 10% 10%; 
   background-attachment: fixed;
-  min-height: 450px;
+  min-height: 800px;
+}
+
+nav {
+  text-align: center;
+  background-color: #fcf0c9;
+  margin: auto;
+  padding: 10px;
+  color: inherit;
 }
 
 nav ul {
@@ -61,6 +58,7 @@ h1 {
   font-family: "Josefin Sans", sans-serif;
   padding: 15px;
   color: inherit;
+  float: left;
 }
 
 /*Added to get rid of the default blue color and underline style.*/
@@ -84,12 +82,12 @@ select {
    border-width: .3px;
    border-radius: 6px;
    background-color: #f1f1f1;
-   font-family: "Josefin Sans", sans-serif;
+   font-family: "Raleway", sans-serif;
    font-size: 25px;
 }
 
 section {
-  min-height: 750px;
+  min-height: 800px;
 }
 
 footer {
@@ -99,6 +97,7 @@ footer {
 	width: 100%;
 	min-height: 75px;
   overflow: auto;
+  text-align: center;
 }
 
 footer h2 {
@@ -108,10 +107,25 @@ footer h2 {
 
  h3 {
   font-size: 50px;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-style: 600;
   padding: 15px;
 }
+
+footer h4 {
+  font-size: 14px;
+  text-align: center;
+  padding: 10px;
+
+}
+
+.succulent {
+  background-image: url("../images/succulent-icon.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+ }
 
  .social_icon {
   float:left;
@@ -132,14 +146,38 @@ li {
   float: left;
 }
 
-/*.categories {
-  float: left;
-  padding: 10px;
-  width: 100%;
-  overflow: auto;
-}*/
+.feature-images {
+  display: inline-block;
+}
 
-/*Superfood pictures that will populate when category word is hovered.*/
+img {
+  width: 100%;
+}
+
+a {
+  color: black;
+}
+
+.demo,
+.demo_second,
+.demo_third {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  padding: 50px;
+  margin-right: 10px;
+  background-size: cover;
+  border-style: solid;
+  border-color: white;
+  border-width: 7px;
+  float: left;
+}
+
+ .hidden {
+  display: none;
+}
+
+/*Superfood pictures that will populate when assigned option is changed.*/
 /*first set of images*/
 .demo.hydrate  {
   background-image: url("../images/cucumber.jpg");
@@ -226,33 +264,6 @@ li {
    background-size: cover;
 }
 
-.feature-images {
-  display: inline-block;
-}
-
-img {
-  width: 100%;
-}
-
-.demo,
-.demo_second,
-.demo_third {
-  width: 400px;
-  height: 400px;
-  position: relative;
-  padding: 50px;
-  margin-right: 10px;
-  background-size: cover;
-  border-style: solid;
-  border-color: white;
-  border-width: 7px;
-  float: left;
-}
-
-.hidden {
-  display: none;
-}
-
 #content,
 #content_second,
 #content_third {
@@ -267,7 +278,9 @@ img {
   bottom: 0;
   background-color: rgba(0,0,0,.5);
   color: #fff;
+  font-family: "Raleway", sans-serif;
  }
+
 
 /*Hover effects*/
 
@@ -304,5 +317,35 @@ select:hover {
 #resources-list li {
   float: none;
 }
+
+.hamburger {
+  display: none;
+}
+
+/*Responsive design formatting.*/
+
+@media screen and (max-width: 768px) {
+
+
+ .feature-images {
+    width: 100%;
+  }
+
+   nav ul {
+    display: none;
+  }
+
+ .hamburger {
+      display: block;
+      float: right;
+  }
+
+  .demo,
+  .demo_second,
+  .demo_third {
+    margin-left: 10px;
+  }
+
+  
 
 
