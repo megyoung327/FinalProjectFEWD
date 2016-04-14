@@ -28,24 +28,21 @@ body {
   background-color: #c9d5fc; 
 }
 
-header {
-  min-height: 75px;
-  text-align: center;
-  background-color: #fcf0c9;
-  margin: auto;
- /* border-style: double;*/
- /* border-width: 5px;*/
-  padding: 10px;
-  color: inherit;
-}
-
 .feature-photo {
   background-image: url("../images/healthy-skin-foods.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 10% 10%; 
   background-attachment: fixed;
-  min-height: 450px;
+  min-height: 800px;
+}
+
+nav {
+  text-align: center;
+  background-color: #fcf0c9;
+  margin: auto;
+  padding: 10px;
+  color: inherit;
 }
 
 nav ul {
@@ -61,6 +58,7 @@ h1 {
   font-family: "Josefin Sans", sans-serif;
   padding: 15px;
   color: inherit;
+  float: left;
 }
 
 /*Added to get rid of the default blue color and underline style.*/
@@ -89,7 +87,7 @@ select {
 }
 
 section {
-  min-height: 750px;
+  min-height: 800px;
 }
 
 footer {
@@ -99,6 +97,7 @@ footer {
 	width: 100%;
 	min-height: 75px;
   overflow: auto;
+  text-align: center;
 }
 
 footer h2 {
@@ -112,6 +111,21 @@ footer h2 {
   font-style: 600;
   padding: 15px;
 }
+
+footer h4 {
+  font-size: 14px;
+  text-align: center;
+  padding: 10px;
+
+}
+
+.succulent {
+  background-image: url("../images/succulent-icon.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+ }
 
  .social_icon {
   float:left;
