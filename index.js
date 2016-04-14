@@ -1,6 +1,7 @@
 function changeBackgroundImage(event) {
 
     
+    
 
     $('.demo, .demo_second, .demo_third').removeClass('hidden');
     //this
@@ -29,6 +30,14 @@ $(document).ready(function() {
 
     $('.benefits').change(changeBackgroundImage);
 
+    $('.hamburger').click(toggleMenu);
+
+    // define toggle menu function. 
+    function toggleMenu() {
+      // first part of jquery is any css selector
+      $('nav ul').slideToggle();
+
+}
 
 });
 
