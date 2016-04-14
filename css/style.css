@@ -29,13 +29,14 @@ body {
 }
 
 header {
-  min-height: 100px;
+  min-height: 75px;
   text-align: center;
   background-color: #fcf0c9;
   margin: auto;
   border-style: double;
   border-width: 5px;
   padding: 10px;
+  color: inherit;
 }
 
 .feature-photo {
@@ -46,15 +47,19 @@ header {
   min-height: 450px;
 }
 
-nav li {
+nav ul {
   float: right;
+}
+
+nav li {
+  float: left;
 }
 
 h1 {
 	font-size: 60px;
   font-family: "Josefin Sans", sans-serif;
-  font-style: 600;
   padding: 15px;
+  color: inherit;
 }
 
 /*Added to get rid of the default blue color and underline style.*/
@@ -67,6 +72,19 @@ main {
  	background-color: #fcf0c9;
  	width:100%;
  	min-height: 600px;
+  text-align: center;
+  color: inherit;
+}
+
+select {
+   padding: 10px 8px;
+   margin-top: 10px;
+   border: solid;
+   border-width: .3px;
+   border-radius: 6px;
+   background-color: #f1f1f1;
+   font-family: "Josefin Sans", sans-serif;
+   font-size: 25px;
 }
 
 section {
@@ -87,6 +105,13 @@ footer h2 {
 	text-align: center;
  }
 
+ h3 {
+  font-size: 50px;
+  font-family: "Josefin Sans", sans-serif;
+  font-style: 600;
+  padding: 15px;
+}
+
  .social_icon {
   float:left;
   width: 60px;
@@ -95,9 +120,8 @@ footer h2 {
  }
 
 .question {
-  float: left;
   font-size: 35px;
-  padding: 20px;
+  padding: 75px;
 }
 
 li {
@@ -107,12 +131,12 @@ li {
   float: left;
 }
 
-.categories {
+/*.categories {
   float: left;
   padding: 10px;
   width: 100%;
   overflow: auto;
-}
+}*/
 
 /*Superfood pictures that will populate when category word is hovered.*/
 /*first set of images*/
@@ -201,6 +225,10 @@ li {
    background-size: cover;
 }
 
+.feature-images {
+  display: inline-block;
+}
+
 img {
   width: 100%;
 }
@@ -212,11 +240,16 @@ img {
   height: 400px;
   position: relative;
   padding: 50px;
+  margin-right: 10px;
   background-size: cover;
-  float: left;
   border-style: solid;
   border-color: white;
   border-width: 7px;
+  float: left;
+}
+
+.hidden {
+  display: none;
 }
 
 #content,
@@ -238,7 +271,6 @@ img {
 /*Hover effects*/
 
 .social_icon:hover {
-  color: #c9d5fc;
   cursor: pointer;
 }
 
@@ -253,20 +285,23 @@ h1:hover {
   cursor: pointer;
 }
 
-/*Special formatting for Resources Page*/
+a:visited {
+  color: black;
+}
 
-li:hover #resources-list {
-  color: white;
+select:hover {
   cursor: pointer;
 }
 
-h3 {
-  font-size: 50px;
-  font-family: "Josefin Sans", sans-serif;
-  font-style: 600;
-  padding: 15px;
+/*Special formatting for Resources Page*/
+
+#resources-list li:hover a  {
+  color: white;
+  cursor: pointer;
 }
 
 #resources-list li {
   float: none;
 }
+
+
