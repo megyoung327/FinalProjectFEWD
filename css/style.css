@@ -197,23 +197,25 @@ a {
   background-image: url("../images/fennel.jpg");
   background-size: cover;
 }
-.demo.age {
-  background-image: url("../images/grapefruit.jpg");
-  background-size: cover;
-}
+
 .demo.soft {
   background-image: url("../images/avocado.jpg");
   background-size: cover;
 }
+.demo.rejuvenate {
+  background-image: url("../images/grapefruit.jpg");
+  background-size: cover;
+}
+
 
 /*Second Set of images*/
 .demo_second.hydrate {
-  background-image: url("../images/beets.jpg");
+  background-image: url("../images/watermelon.jpg");
   background-size: cover;
 }
 
 .demo_second.bright {
-  background-image: url("../images/figs.jpg");
+  background-image: url("../images/papaya.jpg");
   background-size: cover;
 }
 
@@ -232,7 +234,7 @@ a {
   background-size: cover;
 }
 
-.demo_second.age {
+.demo_second.rejuvenate {
   background-image: url("../images/raspberry.jpg");
   background-size: cover;
 }
@@ -251,7 +253,7 @@ a {
   background-size: cover;
 }
 .demo_third.detox {
-  background-image: url("../images/cucumber.jpg");
+  background-image: url("../images/ginger.jpg");
   background-size: cover;
 }
 .demo_third.soft {
@@ -259,7 +261,7 @@ a {
   background-size: cover;
 }
 
-.demo_third.age {
+.demo_third.rejuvenate {
    background-image: url("../images/chard.jpg");
    background-size: cover;
 }
